@@ -1,16 +1,16 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import common from './components/common';
 function App() {
 
-  const styles = {
-    color: "black",
-    backgroundColor: "white"
-  }
+
 
 
   return (
     <div className="App">
       <NavBar />
+      <common.TitleTablet text="Hola"></common.TitleTablet>
+      <common.buttonSubmit></common.buttonSubmit>
     </div>
   );
 }
