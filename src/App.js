@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import common from './components/common';
+import ItemListContainer from './components/ItemListContainer';
 function App() {
 
 
@@ -8,9 +9,13 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar>
+      <div>1</div>
+      <div>2</div>
+      </NavBar>
       <common.TitleTablet text="Hola"></common.TitleTablet>
       <common.buttonSubmit></common.buttonSubmit>
+      <ItemListContainer/>
     </div>
   );
 }

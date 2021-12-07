@@ -1,9 +1,17 @@
-import React from "react";
-function NavBar() {
+import React, { useEffect, useState } from "react";
+import CartWidget from "./CartWidget";
+function NavBar(props) {
+    const [myr, setmyr] = useState('E-Comerce')
+    console.log(props.children)
+    const handleClick = () => {
+        setmyr('Hola eh cambiado')
+        console.log(myr)
+    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">M-Moda</a>
+                <a className="navbar-brand" href="#">{myr}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -28,6 +36,7 @@ function NavBar() {
                         </li>
 
                     </ul>
+                  <CartWidget/>
                 </div>
             </div>
         </nav>
