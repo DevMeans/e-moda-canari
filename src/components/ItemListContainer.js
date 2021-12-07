@@ -7,7 +7,7 @@ function ItemListContainer(props) {
 
     return (
         <>
-            <common.TitleTablet Text={greeting}></common.TitleTablet>
+            <common.TitleTablet Text={greeting} estilo="text-primary" ></common.TitleTablet>
         </>
     )
 

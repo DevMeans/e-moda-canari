@@ -2,7 +2,7 @@
 import React from "react";
 const common = {
     buttonSubmit: () => (<button>Butoon</button>),
-    TitleTablet: ({ Text }) => (<h1>{Text}</h1>),
+    TitleTablet: ({ Text,estilo }) => (<h1 className={estilo}>{Text}</h1>),
     Saludo: ({ greeting }) => (<h1>{greeting}</h1>)
 
 }
